@@ -1,0 +1,22 @@
+{
+  "name": "buck-auth",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20250830.0",
+    "@libsql/client": "^0.15.14",
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.44.5",
+    "hono": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.5",
+    "wrangler": "^4.4.0"
+  }
+}
