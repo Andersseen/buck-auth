@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "d1:generate": "pnpm drizzle-kit generate",
+    "d1:local": "pnpm dlx wrangler d1 execute buck-auth --local --file",
+    "d1:remote": "pnpm dlx wrangler d1 execute buck-auth --remote --file"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20250830.0",
